@@ -1,0 +1,63 @@
+# AWS-IAM
+This is AWS IAM Questions and there Answers
+### IAM:
+
+1. **How many resources do we have in IAM?**
+   - **Answer:**
+     - IAM manages three types of resources: Users, Groups, and Roles.
+
+2. **Deployment model in IAM?**
+   - **Answer:**
+     - IAM operates in a regional deployment model, which means IAM resources and policies are specific to an AWS region.
+
+3. **Identities in IAM?**
+   - **Answer:**
+     - Identities in IAM refer to Users, Groups, and Roles.
+
+4. **What is an IAM User?**
+   - **Answer:**
+     - An IAM User is an entity that represents a person or service that interacts with AWS. Users have associated security credentials and belong to groups that have policies attached.
+
+5. **What is the IAM Group?**
+   - **Answer:**
+     - An IAM Group is a collection of IAM Users. Groups make it easier to manage permissions because you can apply policies to multiple users simultaneously.
+
+6. **What is the IAM Policy?**
+   - **Answer:**
+     - An IAM Policy is a document that defines permissions. It specifies what actions are allowed or denied on what AWS resources for which users or groups under what conditions.
+
+7. **What is the IAM Role?**
+   - **Answer:**
+     - An IAM Role is similar to a user but is assumed by AWS services, applications, or users temporarily. Roles define a set of permissions to access resources, and users or services assume these roles.
+
+8. **Where do we attach Identity Based Policy?**
+   - **Answer:**
+     - Identity-Based Policies are attached to IAM Users, Groups, or Roles directly.
+
+9. **Where do we attach Resource-Based Policy?**
+   - **Answer:**
+     - Resource-Based Policies are attached directly to the resource they are intended to protect. For example, S3 buckets have resource-based policies.
+
+10. **Can we be able to create Policy via JSON code?**
+    - **Answer:**
+      - Yes, IAM Policies can be created using JSON code.
+
+11. **If one user has created it by default, which permission has been assigned to that user?**
+    - **Answer:**
+      - By default, when a user is created, they have no permissions. Permissions need to be explicitly assigned through policies.
+
+12. **What is dominator policy?**
+    - **Answer:**
+      - There is no standard term "dominator policy" in IAM. It might be a misinterpretation or a term used in a specific context.
+
+13. **What is ARN? What are the fields in ARN?**
+    - **Answer:**
+      - ARN stands for Amazon Resource Name. It is a unique identifier for AWS resources. The format is `arn:partition:service:region:account-id:resource`. Fields include partition, service, region, account ID, and resource.
+
+14. **How many types of ARN Partition?**
+    - **Answer:**
+      - There are two types of ARN partitions: `aws` (for AWS commercial) and `aws-cn` (for AWS China).
+
+15. **What are Tags?**
+    - **Answer:**
+      - Tags are key-value pairs that can be attached to IAM users, groups, roles, or policies to add metadata. They help in organizing and managing AWS resources.
