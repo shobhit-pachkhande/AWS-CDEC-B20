@@ -1,0 +1,43 @@
+VPC:- 
+Q1.Create a 5 VPC with different networks.
+
+--> create 5 vpc route table is also created
+    create 5 IG
+    create subnets within vpc's
+    associate subnets with route tables and 
+    Add IG in route tables
+
+Q2. Create a customised VPC and enable the DHCP & DNS option set.
+
+--> create VPC automtically enable DHCP Option 
+    for DNS you enabled manually for that
+    vpc --> edit vpc setting --> enable dns hostname
+
+Q3. Enable the flow logs of newly created custom VPC.
+
+--> enable flow logs mention s3 bucket where you want store logs.
+
+Q4. create a Network Load Balancer (Need proper flow diagram, with explanation)
+
+--> create TG select port tcp / add instance
+    create nlb 
+    select VPC 
+    add TG in listeners
+    create
+
+Q5.Create a 3 VPC & do the peering between 3 VPC.
+
+--> create 3 vpc
+    create transit gateway  --> cretae
+    create 3 transit gateway attachments --> create --> add transit gateway --> select vpc 
+    do same for all remaining for 2 vpc
+    Configured the all vpc route table and add route entries SUBNET of vpc’s/az in destinations and target to Transit gatway.
+    
+Q6. Access the all S3 Buckets in Particular single customised VPC w/o internet, so how can we achieve it ?
+
+--> create vpc and subnet 
+    associate subnet to route table and add IG
+    create role --> attach to instance in vpc
+    create endpoint --> add service S3 --> add vpc --> select route table
+    coonect instance through ssh and install awscli.
+    after you access s3 buckets using aws commands 
