@@ -1,0 +1,93 @@
+# AWS-S3
+This is AWS S3 Questions and there Answers
+
+**Simple Storage Service**
+
+
+**16. What is the difference between Block Storage and Object Storage?**
+   
+   Block Storage manages data in fixed-sized blocks, suitable for operating systems and databases. Object Storage (e.g., S3) manages data as objects with metadata, ideal for scalable and distributed storage like backups and media.
+
+**17. What distinguishes a Static Website from a Dynamic Website?**
+   
+   A Static Website displays fixed content and doesn't change based on user interactions. In contrast, a Dynamic Website generates content on-the-fly, often personalized based on user input or other factors.
+
+**18. What are the naming rules for an S3 bucket?**
+   
+   Bucket names must be globally unique, contain only lowercase letters, numbers, hyphens, and periods, start and end with a letter or number, and be between 3 and 63 characters long.
+
+**19. What is the major resource in an S3 bucket?**
+   
+   The major resource in an S3 bucket is the object, representing the actual data being stored.
+
+**20. What are the considerations when hosting Static Websites vs. Dynamic Websites?**
+   
+   Static websites are simpler, load faster, and are suitable for content that doesn't change frequently. Dynamic websites offer interactivity and personalized content but may have higher infrastructure and maintenance requirements.
+
+**21. What is versioning in S3, and why is it needed?**
+   
+   Versioning in S3 allows storing multiple versions of an object, aiding in data protection, recovery from accidental deletion, and maintaining version history.
+
+**22. What are objects, and what types of objects exist in an S3 bucket?**
+   
+   Objects in S3 represent files, documents, etc. Types include Standard, Infrequent Access, Glacier, Intelligent-Tiering, etc. (Storage Classes).
+
+**23. What is MFA Delete in S3, specifically at the object level?**
+   
+   MFA Delete adds an extra layer of security, requiring additional authentication (Multi-Factor Authentication) to permanently delete objects.
+
+**24. What is S3 Multipart Upload?**
+   
+   S3 Multipart Upload enables uploading large objects in parts, improving efficiency and reliability for large file transfers.
+
+**25. What are the storage classes available in Amazon S3?**
+   
+   Storage classes in S3 include Standard, Intelligent-Tiering, One Zone-Infrequent Access, Glacier, Glacier Deep Archive, etc.
+
+**26. What is ACL in the context of Amazon S3?**
+   
+   ACL, or Access Control List, controls who can access objects in an S3 bucket and their permissions.
+
+**27. Why is ACL needed in S3?**
+   
+   ACL is needed in S3 to provide fine-grained control over object access and permissions.
+
+**28. What is a Lifecycle Policy in S3, and why is it needed?**
+   
+   A Lifecycle Policy defines actions to be taken on objects over time, aiding in automating data management and cost optimization.
+
+**29. How can you make an S3 bucket public?**
+   
+   You can make an S3 bucket public by setting bucket policies or using Access Control Lists (ACLs) to grant public access.
+
+**30. How can you give public access to objects in an S3 bucket?**
+   
+   Adjust bucket policies or permissions on individual objects to grant public access.
+
+**31. What are the pricing factors for the S3 service in AWS?**
+   
+   Pricing factors for S3 include storage volume, number of requests, data transfer, and additional features like versioning.
+
+**32. How can you make an object in an S3 bucket public?**
+   
+   Adjust the object's Access Control List (ACL) or bucket policy to grant public read access.
+
+**33. How can you configure logs for a static website in S3?**
+   
+   Enable server access logging in S3 bucket properties.
+
+**34. What is CORS (Cross-Origin Resource Sharing)?**
+   
+   CORS controls which web domains can access resources on your domain.
+
+**35. What is S3 Inventory?**
+   
+   S3 Inventory is a feature to generate reports about objects and their metadata.
+
+**36. What does Requester Pays mean in S3?**
+   
+   The person who sends the request pays for the data transfer and request costs.
+
+**37. What is the secondary term for S3 Transfer Acceleration, and why is it used?**
+   
+   The secondary term for S3 Transfer Acceleration is Transfer Acceleration. It improves upload/download speed using Amazon CloudFront's globally distributed edge locations, aiding in fast data transfers.
