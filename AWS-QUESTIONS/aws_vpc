@@ -1,0 +1,72 @@
+# AWS-VPC
+This is AWS Virtual Private Cloud Questions and there Answers
+
+aws vpc 
+
+104. **What is VPC?**
+   
+   - A VPC (Virtual Private Cloud) is a logically isolated section within the AWS Cloud where users can deploy and manage AWS resources. It allows customization of network configurations, including IP address ranges, subnets, and route tables.
+
+105. **What are the Subnets when working with VPC?**
+   
+   - Subnets are segmented IP address ranges within a VPC. They enable further organization of resources, providing isolation and segmentation within the VPC.
+
+106. **What is NAT Device?**
+   
+   - A NAT (Network Address Translation) device allows instances in private subnets to initiate outbound traffic while appearing with the same public IP address. It helps in controlling internet-bound traffic from instances in private subnets.
+
+107. **What is the difference between stateful & stateless filtering?**
+   
+   - Stateful filtering tracks the state of active connections, making decisions based on context. Stateless filtering evaluates each packet independently, considering only source and destination information.
+
+108. **What are the advantages of using default VPC?**
+   
+   - The default VPC simplifies setup, as it comes preconfigured. Instances in the default VPC can communicate with the internet by default, providing convenience for users new to AWS.
+
+109. **What is the internet gateway in VPC?**
+   
+   - An internet gateway is a horizontally scalable, redundant component that allows communication between instances in a VPC and the internet. It facilitates internet access for instances.
+
+110. **What is Network ACL in VPC?**
+   
+   - A Network Access Control List (NACL) is a stateless firewall for controlling inbound and outbound traffic at the subnet level within a VPC.
+
+111. **What is the Security Group in VPC?**
+   
+   - A Security Group acts as a virtual firewall for instances within a VPC, controlling inbound and outbound traffic. It operates at the instance level and is associated with one or more instances.
+
+112. **What is an Elastic IP Address in VPC, and why do we need to use, realtime example?**
+   
+   - An Elastic IP is a static IPv4 address designed for dynamic cloud computing. It provides a consistent IP for an instance, useful for scenarios like hosting a web server with a static IP.
+
+113. **Can we attach one Production Elastic IP to the new Prod server?**
+   
+   - Yes, Elastic IPs can be detached from one instance and attached to another, allowing a consistent IP address even if the underlying server changes.
+
+114. **How does ELB Affect a VPC?**
+   
+   - Elastic Load Balancer (ELB) distributes incoming traffic across multiple targets, enhancing fault tolerance and availability within a VPC.
+
+115. **What are the limitations of VPC’s, Gateway and subnets?**
+   
+   - Limitations include a maximum of 5 VPCs by default, constraints on the number of subnets, and specific limitations on VPC peering.
+
+116. **What is a Public IP Address and why do we use it?**
+   
+   - A Public IP Address is globally unique on the internet and is used to identify and communicate with devices across the internet.
+
+117. **Explain Bastion Host Concept?**
+   
+   - A Bastion Host is a special-purpose instance providing secure access to a VPC for administrative tasks. It acts as a gateway to the private instances within the VPC.
+
+118. **When do we need to create a new customised VPC?**
+   
+   - A new customized VPC is needed when specific networking requirements, such as unique IP address ranges or custom routing, are necessary.
+
+119. **What is Peering? Why do we need to peer at two VPC’s?**
+   
+   - Peering is a connection between two VPCs, enabling communication as if they are within the same network. It is useful for resource sharing and collaboration.
+
+120. **What is VPN, Where do we use VPN Tunnel?**
+   
+   - A VPN (Virtual Private Network) creates a secure connection over the internet, often used to establish a secure communication channel between on-premises networks and AWS VPCs.
